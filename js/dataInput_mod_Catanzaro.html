@@ -1,0 +1,25 @@
+// Prompt 1
+var favoriteSong = prompt("What is your favorite song or artist?");
+alert("My favorite song or artist is " + favoriteSong);
+
+// Prompt 2
+var favoriteActivity = prompt("What is your favorite sport, movie, or game?");
+alert("Uppercase: " + favoriteActivity.toUpperCase() + 
+      " | Lowercase: " + favoriteActivity.toLowerCase());
+
+// Find first vowel position other than 'a'
+var vowels = ['e','i','o','u'];
+var pos = -1;
+for(var i=0;i<favoriteActivity.length;i++){
+    if(vowels.includes(favoriteActivity[i].toLowerCase())){
+        pos = i;
+        break;
+    }
+}
+alert("First vowel position (other than a): " + pos);
+
+// Prompt 3
+var x = 10;
+var y = 2;
+var sum = x / y;
+alert(x + " divided by " + y + " equals " + sum);
